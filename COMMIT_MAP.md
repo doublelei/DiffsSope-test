@@ -6,7 +6,15 @@ This document maps test commits to their intended test cases. Each commit is des
 
 | Commit Description | SHA (to be filled) | Test Case Type | Languages | Files |
 |-------------------|-------------------|---------------|-----------|-------|
-| Initial setup with basic functions | TBD | Baseline | Python, JavaScript | python/basic_functions.py, javascript/basic_functions.js |
+| Initial setup with basic functions | 2fd3a0971b52ee66d0adcf3109f33e8471dcc365 | Baseline | Python, JavaScript | python/basic_functions.py, javascript/basic_functions.js |
+
+## File-Level Change Tests
+
+| Commit Description | SHA (to be filled) | Test Case Type | Languages | Files |
+|-------------------|-------------------|---------------|-----------|-------|
+| File additions | TBD | File-level changes | Python, JavaScript | python/util_functions.py, javascript/util_functions.js |
+| File removals | TBD | File-level changes | Python, JavaScript | python/to_be_removed.py, javascript/to_be_removed.js |
+| File renames | TBD | File-level changes | Python, JavaScript | python/old_name.py → python/new_name.py, javascript/old_name.js → javascript/new_name.js |
 
 ## Function Body Change Tests
 
