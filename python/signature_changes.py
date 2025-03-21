@@ -45,18 +45,18 @@ def function_for_param_removal(a, b):
     return a + b
 
 
-def function_for_param_rename(first_num, second_num):
+def function_for_param_rename(first, second):
     """
-    This function will have parameters renamed in a later commit.
+    A function designed to test parameter renames.
     
-    Args:
-        first_num: First number parameter (will be renamed)
-        second_num: Second number parameter (will be renamed)
-        
+    Parameters:
+    first (int): First parameter (renamed from a)
+    second (int): Second parameter (renamed from b)
+    
     Returns:
-        Product of parameters
+    int: Sum of the parameters
     """
-    return first_num * second_num
+    return first + second
 
 
 def function_for_default_param_change(name, greeting="Hello", punctuation="!"):

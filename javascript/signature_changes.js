@@ -38,13 +38,14 @@ function functionForParamRemoval(a, b) {
 }
 
 /**
- * This function will have parameters renamed in a later commit.
- * @param {number} firstNum - First number parameter (will be renamed)
- * @param {number} secondNum - Second number parameter (will be renamed)
- * @returns {number} Product of parameters
+ * A function designed to test parameter renames.
+ * 
+ * @param {number} first - First parameter (renamed from a)
+ * @param {number} second - Second parameter (renamed from b)
+ * @returns {number} Sum of the parameters
  */
-function functionForParamRename(firstNum, secondNum) {
-  return firstNum * secondNum;
+function functionForParamRename(first, second) {
+    return first + second;
 }
 
 /**
