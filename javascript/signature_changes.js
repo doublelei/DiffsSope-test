@@ -49,14 +49,15 @@ function functionForParamRename(first, second) {
 }
 
 /**
- * This function will have default parameter values changed in a later commit.
- * @param {string} name - The name to greet
- * @param {string} [greeting="Hello"] - The greeting to use
- * @param {string} [punctuation="!"] - The punctuation to use
- * @returns {string} A formatted greeting string
+ * A function designed to test default parameter value changes.
+ * 
+ * @param {number} a - First parameter (no default)
+ * @param {number} [b=20] - Second parameter (default changed from 10 to 20)
+ * @param {number} [c=30] - Third parameter (default changed from 5 to 30)
+ * @returns {number} Sum of all parameters
  */
-function functionForDefaultParamChange(name, greeting = "Hello", punctuation = "!") {
-  return `${greeting}, ${name}${punctuation}`;
+function functionForDefaultParamChange(a, b = 20, c = 30) {
+    return a + b + c;
 }
 
 /**

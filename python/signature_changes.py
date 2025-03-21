@@ -59,19 +59,19 @@ def function_for_param_rename(first, second):
     return first + second
 
 
-def function_for_default_param_change(name, greeting="Hello", punctuation="!"):
+def function_for_default_param_change(a, b=20, c=30):
     """
-    This function will have default parameter values changed in a later commit.
+    A function designed to test default parameter value changes.
     
-    Args:
-        name: The name to greet
-        greeting: The greeting to use (default: "Hello")
-        punctuation: The punctuation to use (default: "!")
-        
+    Parameters:
+    a (int): First parameter (no default)
+    b (int): Second parameter (default changed from 10 to 20)
+    c (int): Third parameter (default changed from 5 to 30)
+    
     Returns:
-        A formatted greeting string
+    int: Sum of all parameters
     """
-    return f"{greeting}, {name}{punctuation}"
+    return a + b + c
 
 
 def function_with_type_annotations(a: int, b: str) -> str:
