@@ -11,7 +11,7 @@
  * @param {number} y - Second parameter
  * @returns {number} Sum of the parameters
  */
-function oldNameSimpleFunction(x, y) {
+function newNameSimpleFunction(x, y) {
   return x + y;
 }
 
@@ -71,7 +71,7 @@ function utilityFunctionOriginal(text) {
 
 // Export functions
 module.exports = {
-  oldNameSimpleFunction,
+  newNameSimpleFunction,
   functionToRenameWithBodyChanges,
   complexFunctionWithOldName,
   helperFunctionOld,

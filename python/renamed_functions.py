@@ -5,7 +5,7 @@ This file contains functions that will be renamed in various ways
 to test DiffScope's ability to detect function renames.
 """
 
-def old_name_simple_function(x, y):
+def new_name_simple_function(x, y):
     """
     A simple function with a basic implementation that will be renamed.
     
