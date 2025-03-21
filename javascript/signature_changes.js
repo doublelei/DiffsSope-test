@@ -9,10 +9,21 @@
  * This function will have parameters added in a later commit.
  * @param {number} a - First parameter
  * @param {number} b - Second parameter
- * @returns {number} Sum of parameters
+ * @param {number} [c=0] - Third parameter (added)
+ * @param {object} [d=null] - Fourth parameter (added)
+ * @param {object} [options={}] - Options object (added)
+ * @returns {number} Sum of parameters and number of options
  */
-function functionForParamAddition(a, b) {
-  return a + b;
+function functionForParamAddition(a, b, c = 0, d = null, options = {}) {
+  let result = a + b;
+  if (c) {
+    result += c;
+  }
+  
+  // Count the options
+  const optionsCount = Object.keys(options).length;
+  
+  return result + optionsCount;
 }
 
 /**

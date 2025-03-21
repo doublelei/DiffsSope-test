@@ -6,18 +6,28 @@ to test DiffScope's ability to detect signature-level changes.
 """
 
 
-def function_for_param_addition(a, b):
+def function_for_param_addition(a, b, c=0, d=None, **kwargs):
     """
     This function will have parameters added in a later commit.
     
     Args:
         a: First parameter
         b: Second parameter
+        c: Third parameter (added)
+        d: Fourth parameter (added)
+        **kwargs: Additional keyword arguments (added)
         
     Returns:
-        Sum of parameters
+        Sum of parameters and count of kwargs
     """
-    return a + b
+    result = a + b
+    if c:
+        result += c
+    
+    # Count the kwargs
+    kwargs_count = len(kwargs)
+    
+    return result + kwargs_count
 
 
 def function_for_param_removal(a, b, c, d):
