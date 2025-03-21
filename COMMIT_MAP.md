@@ -28,10 +28,10 @@ This document maps test commits to their intended test cases. Each commit is des
 
 | Commit Description | SHA (to be filled) | Test Case Type | Languages | Files |
 |-------------------|-------------------|---------------|-----------|-------|
-| Parameter additions | TBD | Signature changes | Python, JavaScript | python/signature_changes.py, javascript/signature_changes.js |
-| Parameter removals | TBD | Signature changes | Python, JavaScript | python/signature_changes.py, javascript/signature_changes.js |
-| Parameter renames | TBD | Signature changes | Python, JavaScript | python/signature_changes.py, javascript/signature_changes.js |
-| Default parameter changes | TBD | Signature changes | Python, JavaScript | python/signature_changes.py, javascript/signature_changes.js |
+| Parameter additions | 37cdc0412f419908d9447f4c5bc4864eeb08953f | Signature changes | Python, JavaScript | python/signature_changes.py, javascript/signature_changes.js |
+| Parameter removals | 240523f37894b3baefb1c0d399fb3a2bed4afcca | Signature changes | Python, JavaScript | python/signature_changes.py, javascript/signature_changes.js |
+| Parameter renames | 4b847842337cc54e98539651f90160a37e1f2383 | Signature changes | Python, JavaScript | python/signature_changes.py, javascript/signature_changes.js |
+| Default parameter changes | 8e36d9aa2f82282abd24d70b768aeb5694ccff19 | Signature changes | Python, JavaScript | python/signature_changes.py, javascript/signature_changes.js |
 
 ## Function Docstring/Comment Change Tests
 
