@@ -30,20 +30,19 @@ def function_for_param_addition(a, b, c=0, d=None, **kwargs):
     return result + kwargs_count
 
 
-def function_for_param_removal(a, b, c, d):
+def function_for_param_removal(a, b):
     """
     This function will have parameters removed in a later commit.
     
     Args:
         a: First parameter
         b: Second parameter
-        c: Third parameter (will be removed)
-        d: Fourth parameter (will be removed)
         
     Returns:
-        Sum of all parameters
+        Sum of remaining parameters
     """
-    return a + b + c + d
+    # The c and d parameters have been removed
+    return a + b
 
 
 def function_for_param_rename(first_num, second_num):

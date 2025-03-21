@@ -30,12 +30,11 @@ function functionForParamAddition(a, b, c = 0, d = null, options = {}) {
  * This function will have parameters removed in a later commit.
  * @param {number} a - First parameter
  * @param {number} b - Second parameter
- * @param {number} c - Third parameter (will be removed)
- * @param {number} d - Fourth parameter (will be removed)
- * @returns {number} Sum of all parameters
+ * @returns {number} Sum of remaining parameters
  */
-function functionForParamRemoval(a, b, c, d) {
-  return a + b + c + d;
+function functionForParamRemoval(a, b) {
+  // The c and d parameters have been removed
+  return a + b;
 }
 
 /**
