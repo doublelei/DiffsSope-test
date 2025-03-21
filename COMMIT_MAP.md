@@ -13,7 +13,7 @@ This document maps test commits to their intended test cases. Each commit is des
 | Commit Description | SHA (to be filled) | Test Case Type | Languages | Files |
 |-------------------|-------------------|---------------|-----------|-------|
 | File additions | 558cc160009d86d7c177fd38ed58e46ffc5061b5 | File-level changes | Python, JavaScript | python/util_functions.py, javascript/util_functions.js |
-| File removals | TBD | File-level changes | Python, JavaScript | python/to_be_removed.py, javascript/to_be_removed.js |
+| File removals | 4f02b1f4e2ea2a60c6985d6e96e09456f0bbaac5 | File-level changes | Python, JavaScript | python/to_be_removed.py, javascript/to_be_removed.js |
 | File renames | e7c362c043dd51a0cb5f8ccfdc19a5c6006c735f | File-level changes | Python, JavaScript | python/old_name.py → python/new_name.py, javascript/old_name.js → javascript/new_name.js |
 
 ## Function Body Change Tests
