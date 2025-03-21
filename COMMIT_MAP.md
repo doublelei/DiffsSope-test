@@ -20,9 +20,9 @@ This document maps test commits to their intended test cases. Each commit is des
 
 | Commit Description | SHA (to be filled) | Test Case Type | Languages | Files |
 |-------------------|-------------------|---------------|-----------|-------|
-| Simple function body changes | TBD | Body changes | Python, JavaScript | python/basic_functions.py, javascript/basic_functions.js |
-| Complex function body changes | TBD | Body changes | Python, JavaScript | python/complex_functions.py, javascript/complex_functions.js |
-| Whitespace-only changes | TBD | Body changes | Python, JavaScript | python/whitespace_changes.py, javascript/whitespace_changes.js |
+| Simple function body changes | abe36dca02ef139cfb420ae3b4f1832aad3180fb | Body changes | Python, JavaScript | python/basic_functions.py, javascript/basic_functions.js |
+| Complex function body changes | ec126041b29733d929677a0dd2a7ac2d946deca0 | Body changes | Python, JavaScript | python/complex_functions.py, javascript/complex_functions.js |
+| Whitespace-only changes | bff6fe821ffa0ef1aa20d0ddf19ba2d17c5deca9 | Body changes | Python, JavaScript | python/whitespace_changes.py, javascript/whitespace_changes.js |
 
 ## Function Signature Change Tests
 
