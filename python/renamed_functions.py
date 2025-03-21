@@ -19,7 +19,7 @@ def new_name_simple_function(x, y):
     return x + y
 
 
-def function_to_rename_with_body_changes(a, b, c=0):
+def renamed_function_with_body_changes(a, b, c=0):
     """
     A function that will be renamed and have its body modified.
     
@@ -29,12 +29,15 @@ def function_to_rename_with_body_changes(a, b, c=0):
         c: Optional third parameter, defaults to 0
         
     Returns:
-        Sum of parameters
+        Sum of parameters with additional processing
     """
-    result = a + b
+    result = a + b  # Start with base result
+    
+    # Apply optional parameter with additional logic
     if c != 0:
-        result += c
-    return result
+        result += c * 2  # Changed multiplication factor
+        
+    return result  # Return the final result
 
 
 def complex_function_with_old_name(data, threshold=0.5, logger=None):

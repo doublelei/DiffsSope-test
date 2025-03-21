@@ -20,14 +20,17 @@ function newNameSimpleFunction(x, y) {
  * @param {number} a - First parameter
  * @param {number} b - Second parameter
  * @param {number} [c=0] - Optional third parameter
- * @returns {number} Sum of parameters
+ * @returns {number} Sum of parameters with additional processing
  */
-function functionToRenameWithBodyChanges(a, b, c = 0) {
-  let result = a + b;
+function renamedFunctionWithBodyChanges(a, b, c = 0) {
+  let result = a + b;  // Start with base result
+  
+  // Apply optional parameter with additional logic
   if (c !== 0) {
-    result += c;
+    result += c * 2;  // Changed multiplication factor
   }
-  return result;
+  
+  return result;  // Return the final result
 }
 
 /**
@@ -72,7 +75,7 @@ function utilityFunctionOriginal(text) {
 // Export functions
 module.exports = {
   newNameSimpleFunction,
-  functionToRenameWithBodyChanges,
+  renamedFunctionWithBodyChanges,
   complexFunctionWithOldName,
   helperFunctionOld,
   utilityFunctionOriginal
