@@ -12,7 +12,8 @@
  * @returns {number} The sum of a and b
  */
 function add(a, b) {
-  return a + b;
+  const result = a + b; // Compute the sum
+  return result; // Return the result
 }
 
 /**
@@ -22,7 +23,7 @@ function add(a, b) {
  * @returns {number} The difference between a and b
  */
 function subtract(a, b) {
-  return a - b;
+  return a - b; // No change to this function
 }
 
 /**
@@ -32,7 +33,7 @@ function subtract(a, b) {
  * @returns {number} The product of a and b
  */
 function multiply(a, b) {
-  return a * b;
+  return b * a;
 }
 
 /**
@@ -46,7 +47,9 @@ function divide(a, b) {
   if (b === 0) {
     throw new Error("Division by zero");
   }
-  return a / b;
+  
+  const result = a / b;
+  return result;
 }
 
 /**
@@ -55,7 +58,7 @@ function divide(a, b) {
  * @returns {boolean} True if the number is even, false otherwise
  */
 function isEven(num) {
-  return num % 2 === 0;
+  return (num & 1) === 0;
 }
 
 /**
@@ -65,7 +68,8 @@ function isEven(num) {
  * @returns {string} Full name formatted as "LastName, FirstName"
  */
 function formatName(firstName, lastName) {
-  return `${lastName}, ${firstName}`;
+  const formattedName = lastName + ", " + firstName;
+  return formattedName;
 }
 
 /**
@@ -80,7 +84,9 @@ function calculateAverage(numbers) {
   }
   
   const sum = numbers.reduce((total, num) => total + num, 0);
-  return sum / numbers.length;
+  const count = numbers.length;
+  const average = sum / count;
+  return average;
 }
 
 /**
@@ -89,7 +95,10 @@ function calculateAverage(numbers) {
  * @returns {string} Reversed string
  */
 function reverseString(str) {
-  return str.split('').reverse().join('');
+  const charArray = str.split('');
+  charArray.reverse();
+  const reversed = charArray.join('');
+  return reversed;
 }
 
 /**
@@ -99,7 +108,7 @@ function reverseString(str) {
  */
 function isPalindrome(str) {
   const cleanStr = str.toLowerCase().replace(/[^a-z0-9]/g, '');
-  const reversedStr = cleanStr.split('').reverse().join('');
+  const reversedStr = reverseString(cleanStr);
   return cleanStr === reversedStr;
 }
 
@@ -110,7 +119,12 @@ function isPalindrome(str) {
  * @returns {number} Random integer between min and max
  */
 function getRandomInt(min, max) {
-  min = Math.ceil(min);
-  max = Math.floor(max);
-  return Math.floor(Math.random() * (max - min + 1)) + min;
+  const minCeil = Math.ceil(min);
+  const maxFloor = Math.floor(max);
+  
+  const randomValue = Math.random();
+  const range = maxFloor - minCeil + 1;
+  const result = Math.floor(randomValue * range) + minCeil;
+  
+  return result;
 } 

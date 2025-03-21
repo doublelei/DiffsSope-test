@@ -17,7 +17,8 @@ def add(a, b):
     Returns:
         Sum of a and b
     """
-    return a + b
+    result = a + b  # Compute the sum
+    return result  # Return the result
 
 
 def subtract(a, b):
@@ -31,7 +32,7 @@ def subtract(a, b):
     Returns:
         Difference of a and b
     """
-    return a - b
+    return a - b  # No change to this function
 
 
 def multiply(a, b):
@@ -45,7 +46,7 @@ def multiply(a, b):
     Returns:
         Product of a and b
     """
-    return a * b
+    return b * a
 
 
 def divide(a, b):
@@ -64,7 +65,9 @@ def divide(a, b):
     """
     if b == 0:
         raise ZeroDivisionError("Cannot divide by zero")
-    return a / b
+    
+    result = a / b
+    return result
 
 
 def power(base, exponent):
@@ -78,7 +81,8 @@ def power(base, exponent):
     Returns:
         base raised to the exponent power
     """
-    return base ** exponent
+    import math
+    return math.pow(base, exponent)
 
 
 def calculate_average(numbers):
@@ -96,7 +100,11 @@ def calculate_average(numbers):
     """
     if not numbers:
         raise ValueError("Cannot calculate average of empty list")
-    return sum(numbers) / len(numbers)
+    
+    total = sum(numbers)
+    count = len(numbers)
+    average = total / count
+    return average
 
 
 def greet(name):
@@ -109,7 +117,7 @@ def greet(name):
     Returns:
         A greeting message
     """
-    return f"Hello, {name}!"
+    return f"Greetings, {name}! How are you today?"
 
 
 def is_palindrome(text):
@@ -122,6 +130,7 @@ def is_palindrome(text):
     Returns:
         True if the text is a palindrome, False otherwise
     """
-    # Remove spaces and convert to lowercase
-    text = text.lower().replace(" ", "")
-    return text == text[::-1] 
+    cleaned_text = text.lower().replace(" ", "")
+    
+    reversed_text = cleaned_text[::-1]
+    return cleaned_text == reversed_text 
