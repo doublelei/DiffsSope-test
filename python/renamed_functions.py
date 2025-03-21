@@ -40,14 +40,15 @@ def renamed_function_with_body_changes(a, b, c=0):
     return result  # Return the final result
 
 
-def complex_function_with_old_name(data, threshold=0.5, logger=None):
+def enhanced_data_processor(data, min_threshold=0.5, max_threshold=1.0, config=None):
     """
     A complex function that will be renamed and have signature changes.
     
     Args:
         data: Input data to process
-        threshold: Threshold for filtering, defaults to 0.5
-        logger: Optional logger instance
+        min_threshold: Minimum threshold for filtering, defaults to 0.5
+        max_threshold: Maximum threshold for filtering, defaults to 1.0
+        config: Optional configuration dictionary
         
     Returns:
         Processed data
@@ -55,10 +56,10 @@ def complex_function_with_old_name(data, threshold=0.5, logger=None):
     result = []
     
     for item in data:
-        if item > threshold:
+        if min_threshold <= item <= max_threshold:
             result.append(item * 2)
-            if logger:
-                logger.info(f"Processed item: {item}")
+            if config and config.get('logging'):
+                config['logger'].info(f"Processed item: {item}")
                 
     return result
 

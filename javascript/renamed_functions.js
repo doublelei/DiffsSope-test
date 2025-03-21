@@ -36,18 +36,21 @@ function renamedFunctionWithBodyChanges(a, b, c = 0) {
 /**
  * A complex function that will be renamed and have signature changes.
  * @param {Array} data - Input data to process
- * @param {number} [threshold=0.5] - Threshold for filtering
- * @param {Object} [logger=null] - Optional logger instance
+ * @param {number} [minThreshold=0.5] - Minimum threshold for filtering
+ * @param {number} [maxThreshold=1.0] - Maximum threshold for filtering
+ * @param {Object} [config=null] - Optional configuration object
+ * @param {boolean} [config.logging=false] - Whether to log processing
+ * @param {Object} [config.logger=null] - Logger instance if logging is enabled
  * @returns {Array} Processed data
  */
-function complexFunctionWithOldName(data, threshold = 0.5, logger = null) {
+function enhancedDataProcessor(data, minThreshold = 0.5, maxThreshold = 1.0, config = null) {
   const result = [];
   
   for (const item of data) {
-    if (item > threshold) {
+    if (item >= minThreshold && item <= maxThreshold) {
       result.push(item * 2);
-      if (logger) {
-        logger.info(`Processed item: ${item}`);
+      if (config && config.logging && config.logger) {
+        config.logger.info(`Processed item: ${item}`);
       }
     }
   }
@@ -76,7 +79,7 @@ function utilityFunctionOriginal(text) {
 module.exports = {
   newNameSimpleFunction,
   renamedFunctionWithBodyChanges,
-  complexFunctionWithOldName,
+  enhancedDataProcessor,
   helperFunctionOld,
   utilityFunctionOriginal
 };
