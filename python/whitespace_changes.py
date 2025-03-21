@@ -23,7 +23,7 @@ def function_with_normal_whitespace(a, b, c):
     return result
 
 
-def function_with_compact_whitespace(a,b,c):
+def function_with_compact_whitespace(a, b, c):
     """A function with compact whitespace that will have whitespace changes later.
     
     Args:
@@ -34,10 +34,10 @@ def function_with_compact_whitespace(a,b,c):
     Returns:
         Product of all parameters
     """
-    return a*b*c
+    return a * b * c
 
 
-def function_with_excessive_whitespace(a,    b,     c):
+def function_with_excessive_whitespace(a, b, c):
     """
     A function with excessive whitespace between parameters.
     
@@ -49,8 +49,8 @@ def function_with_excessive_whitespace(a,    b,     c):
     Returns:
         String representation of parameters
     """
-    result  =  str(a)  +  "  "  +  str(b)  +  "  "  +  str(c)
-    return   result
+    result = str(a) + " " + str(b) + " " + str(c)
+    return result
 
 
 def function_with_unusual_indentation(a, b):
@@ -65,7 +65,7 @@ def function_with_unusual_indentation(a, b):
         Dictionary of parameter values
     """
     if a > b:
-            result = {"larger": a, "smaller": b}
+        result = {"larger": a, "smaller": b}
     else:
-       result = {"larger": b, "smaller": a}
+        result = {"larger": b, "smaller": a}
     return result 

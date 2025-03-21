@@ -13,8 +13,8 @@
  * @returns {number} Sum of all parameters
  */
 function functionWithNormalWhitespace(a, b, c) {
-  const result = a + b;
-  return result + c;
+  const result=a+b;
+  return result+c;
 }
 
 /**
@@ -24,8 +24,8 @@ function functionWithNormalWhitespace(a, b, c) {
  * @param {number} c - Third parameter
  * @returns {number} Product of all parameters
  */
-function functionWithCompactWhitespace(a,b,c){
-  return a*b*c;
+function functionWithCompactWhitespace(a, b, c) {
+  return a * b * c;
 }
 
 /**
@@ -35,9 +35,9 @@ function functionWithCompactWhitespace(a,b,c){
  * @param {number} c - Third parameter
  * @returns {string} String representation of parameters
  */
-function functionWithExcessiveWhitespace(a,    b,     c) {
-  const  result  =  a.toString()  +  "  "  +  b.toString()  +  "  "  +  c.toString();
-  return   result;
+function functionWithExcessiveWhitespace(a, b, c) {
+  const result = a.toString() + " " + b.toString() + " " + c.toString();
+  return result;
 }
 
 /**
@@ -49,9 +49,9 @@ function functionWithExcessiveWhitespace(a,    b,     c) {
 function functionWithUnusualIndentation(a, b) {
   let result;
   if (a > b) {
-          result = { "larger": a, "smaller": b };
+    result = { "larger": a, "smaller": b };
   } else {
-     result = { "larger": b, "smaller": a };
+    result = { "larger": b, "smaller": a };
   }
   return result;
 }
