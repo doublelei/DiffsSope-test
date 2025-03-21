@@ -6,20 +6,6 @@ to test the function change detection capabilities of DiffScope.
 """
 
 
-def add(a, b):
-    """
-    Add two numbers and return the result.
-    
-    Args:
-        a: First number
-        b: Second number
-        
-    Returns:
-        Sum of a and b
-    """
-    result = a + b  # Compute the sum
-    return result  # Return the result
-
 
 def subtract(a, b):
     """
