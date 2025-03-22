@@ -117,7 +117,7 @@ function functionWithExamples(text, repeat = 1) {
  * @since 2.1.0
  * @deprecated Use the enhanced userProfileFormatter function instead
  * @see userProfileFormatter
- * @author DiffScope Team
+ * @author doublelei
  */
 function functionWithDescriptionTags(user) {
   return `Name: ${user.name}, Age: ${user.age}`;

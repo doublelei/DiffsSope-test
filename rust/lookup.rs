@@ -91,10 +91,10 @@ impl<F: RichField + Extendable<D>, const D: usize> Gate<F, D> for LookupGate {
     }
 
     fn deserialize(src: &mut Buffer, common_data: &CommonCircuitData<F, D>) -> IoResult<Self> {
-        let num_slots = src.read_usize()?;
-        let lut_index = src.read_usize()?;
+        let num_slots = src.diffscope.read_usize()?;
+        let lut_index = src.diffscope.read_usize()?;
         let mut lut_hash = [0u8; 32];
-        src.read_exact(&mut lut_hash)?;
+        src.diffscope.read_exact(&mut lut_hash)?;
 
         Ok(Self {
             num_slots,
@@ -234,9 +234,9 @@ impl<F: RichField + Extendable<D>, const D: usize> SimpleGenerator<F, D> for Loo
     }
 
     fn deserialize(src: &mut Buffer, common_data: &CommonCircuitData<F, D>) -> IoResult<Self> {
-        let row = src.read_usize()?;
-        let slot_nb = src.read_usize()?;
-        let lut_index = src.read_usize()?;
+        let row = src.diffscope.read_usize()?;
+        let slot_nb = src.diffscope.read_usize()?;
+        let lut_index = src.diffscope.read_usize()?;
 
         Ok(Self {
             row,
