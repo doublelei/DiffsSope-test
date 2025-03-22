@@ -37,16 +37,16 @@ This document maps test commits to their intended test cases. Each commit is des
 
 | Commit Description | SHA (to be filled) | Test Case Type | Languages | Files |
 |-------------------|-------------------|---------------|-----------|-------|
-| Docstring changes | TBD | Docstring changes | Python | python/docstring_changes.py |
-| Comment changes | TBD | Docstring changes | JavaScript | javascript/comment_changes.js |
+| Docstring changes | 5375ad36bbcd3b464fd30eafe0060cbf554291f2 | Docstring changes | Python | python/docstring_changes.py |
+| Comment changes | 5375ad36bbcd3b464fd30eafe0060cbf554291f2 | Docstring changes | JavaScript | javascript/comment_changes.js |
 
 ## Function Rename Tests
 
 | Commit Description | SHA (to be filled) | Test Case Type | Languages | Files |
 |-------------------|-------------------|---------------|-----------|-------|
-| Simple function renames | TBD | Renamed functions | Python, JavaScript | python/renamed_functions.py, javascript/renamed_functions.js |
-| Function renames with minor body changes | TBD | Renamed functions | Python, JavaScript | python/renamed_functions.py, javascript/renamed_functions.js |
-| Function renames with signature changes | TBD | Renamed functions | Python, JavaScript | python/renamed_functions.py, javascript/renamed_functions.js |
+| Simple function renames | 359f4b2af8e3cf7973ca874479058c0abeafe406 | Renamed functions | Python, JavaScript | python/renamed_functions.py, javascript/renamed_functions.js |
+| Function renames with minor body changes | 8dc985695d41da492f95d3ab3d4582a5268f8faa | Renamed functions | Python, JavaScript | python/renamed_functions.py, javascript/renamed_functions.js |
+| Function renames with signature changes | 09040ddd2a0196e16a015d399304c8cf8d629c82 | Renamed functions | Python, JavaScript | python/renamed_functions.py, javascript/renamed_functions.js |
 
 ## Edge Case Tests
 
